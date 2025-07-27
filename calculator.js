@@ -31,7 +31,7 @@ calculator.addEventListener("click", (event) => {
 });
 
 function appendToDisplay(input){
-    if(display.value === "Error" || display.value === "undefined"){
+    if(display.value === "Error" || display.value === "undefined" || display.value === "Infinity"){
         clearDisplay();
     }
     display.value += input;
